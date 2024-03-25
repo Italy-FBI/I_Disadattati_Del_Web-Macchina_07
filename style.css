@@ -1,10 +1,21 @@
+html{
+  font-family:'Lexend';
+}
+
 #div_menu {
-    height: 25px;
-    position:relative;
+    margin-top: -100px;
+    height: 50px;
+    position:fixed;
     display: flex;
+    justify-content: space-around;
     width: 100%;
-    align-items: center;
     z-index: 2;
+    background-color: #789C88;
+  }
+  ul{
+    align-items: center;
+    display: inline;
+    justify-content: center;
   }
   header{
     height: 30px;
@@ -13,7 +24,7 @@
     position: fixed;
     margin-top: -170px;
     align-items: center;
-    background-color: green;
+    background-color: #789C88;
   }
   
   .menu_item {
@@ -41,15 +52,16 @@
  #img_1{
   height: 300px;
   width: 500px;
+  margin-left: -100px;
   z-index: 1;
  }
   #div_titolo{
     height: 300px;
     width: 100%;
     display: flex;
-    position: relative;
+    flex-direction: row;
     justify-content: center;
-    margin-top: 200px;
+    margin-top: 100px;
     z-index: -1;
   }
   #titolo,#img_1{
@@ -57,12 +69,59 @@
     padding-inline: 50px;
   }
   #div_img_1{
-    background-color: rgb(91, 153, 91);
+    background-color:rgba(53, 108, 77, 0.29);
     border-radius: 50px;
-    width: 250px;
-    height: 250px;
+    width: 325px;
+    height: 275px;
     align-items:center;
-    padding-left: 100px;
     z-index: -1;
   }
+  #titolo{
+    padding-right: 400px;
+    font-size: 50px;
+  }
   
+#div_dati_tecnici{
+  align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+  img{
+    height: 625px;
+    width: 490px;
+    display: inline-block;
+  }
+  fieldset{
+      display: inline-block;
+      font-size: 17px;
+      padding-top: 0.1px;
+      height: 767px;
+      width: 600px;
+      border-style: hidden;
+      background-color: lightgray;
+      box-shadow: 1px 1px 1px 1px gray;
+      border-radius: 40px;
+      legend{
+        font-size: 20px;
+      }
+  }
+}
+#div_caratteristiche{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  padding-top: 200px;
+  fieldset{
+    display: inline-block;
+    font-size: 17px;
+    padding-top: 0.1px;
+    height: 500px;
+    width: 1000px;
+    border-style: hidden;
+    background-color: lightgray;
+    box-shadow: 1px 1px 1px 1px gray;
+    border-radius: 40px;
+    legend{
+      font-size: 20px;
+    }
+  }
+}
