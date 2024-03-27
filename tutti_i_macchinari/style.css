@@ -1,0 +1,56 @@
+html{
+    font-family: 'Lexend';
+}
+header{
+    height: 150px;
+    background-color: #789C88;
+    display: flex;  
+    z-index: -1;
+    font-size: 50px;
+
+}
+#titolo{    
+    text-align: center;
+    margin-left: 25%;
+    margin-top: 20px;
+}
+#logo{
+    width: 174px;
+    height: 174px;
+    margin-top: 10px;
+    margin-left: 10px;
+    z-index: 1;
+}
+#contenitore{
+    display: grid;
+    gap: 200px 150px;
+    margin: 100px;
+    justify-items: center;
+    
+}
+.macchinari{
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
+    background-color: rgba(53, 108, 77, 0.29);
+    
+}
+.macchinari:hover{
+    height: 300px;
+    width: 300px;
+    transition:all ease-in-out 2s;
+}
+#macchinario_1{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end:2;
+
+}
+#macchinario_2{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end:2;
+
+}
